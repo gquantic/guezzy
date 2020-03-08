@@ -1,0 +1,146 @@
+/*
+    Styles Author: Magomedov Murad Gapurovich +7(988)459-75-25
+    Version: 1 (BETA 06.03.2020)
+    
+    Стили подкорректированы специально под дизайнерские макеты.
+    Так же присутствуют стили для темных сайтов.
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+*:focus{ outline: none; } /* Убираем полоски вокруг инпатов при нажатии */
+*{ margin: 0; padding: 0; } /* Отступы нам не нужны */
+
+body{
+	background: #fff;
+	background-size: cover;
+    font-family: "Roboto", Arial, calibri, sans-serif;
+    font-size: 17px;
+}
+
+/* Directions */
+.flex{ display: flex; }
+.flex-block{ display: flex-block; }
+.center{ width: 80%; margin: 0 auto; }
+
+/* Margins */
+.m-none{ margin: none; }
+.m-normal{ margin: 15px; }
+
+.m-newblock{ margin-top: 15px; }
+.m-bottom{ margin-bottom: 15px; }
+
+
+/* Inputs */
+.input-text{ width: 300px; height: fit-content; }
+
+.input-text span{
+    position: absolute;
+    height: 35px;
+    line-height: 35px;
+    z-index: -1;
+    transition: .5s;
+}
+
+.input-text .line{
+    height: 1px; width: 0px;
+    position: absolute;
+    background: #000;
+    margin-top: -1px;
+    transition: 1s;
+}
+
+/*
+.input-text::before{
+    height: 35px; width: auto;
+    content: attr(placeholder);
+    position: absolute; 
+    z-index: -1;
+    transition: .7s ease;
+    line-height: 35px;
+}
+*/
+
+input:focus .input-text::before{
+    
+}
+
+/*.input-text::after{ 
+    content: " ";
+    background: #000;
+    height: 1px; width: 0px;
+    margin-top: -1px;
+    position: absolute; 
+    z-index: 100;
+    transition: .7s ease;
+}
+
+.input-text:hover::after{ width: 300px; }  Input after hover */
+
+input{
+    background: rgba(0,0,0,0);
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,.2);
+    width: 100%;
+    margin: 0; padding: 0;
+    height: 35px;
+    font-size: 16px;
+    text-align: center;
+}
+
+input:focus{
+}
+
+/* Buttons */
+button{
+    height: 35px; width: 171px;
+    background: rgba(0,0,0,0);
+    border: 3px solid #000;
+    font-weight: 600;
+    box-shadow: 2px 2px 0px rgba(0,0,0,1);
+    transition: .2s;
+    color: #000;
+}
+
+button:hover{
+    background: #000;
+    cursor: pointer;
+    color: #fff;
+    box-shadow: none;
+    transform: translate(2px, 2px);
+}
+
+button:active{
+    background: #000;
+    box-shadow: 4px 4px 14px rgba(0,0,0,.3);
+    color: #fff;
+}
+
+button.cancle{
+    border: 3px solid #AD3838;
+    color: #AD3838;
+    box-shadow: 2px 2px 0px #AD3838;
+}
+
+button.cancle:hover{
+    background: #AD3838;
+    color: #fff;
+    box-shadow: none;
+}
+
+button.cancle:active{
+    background: #AD3838;
+    color: #fff;
+}
+
+/* Titles */
+h1{ font-size: 34px; line-height: 34px; font-weight: 100; }
+h2{ font-size: 30px; line-height: 30px; font-weight: 100; }
+h3{ font-size: 25px; line-height: 25px; font-weight: 100; }
+h4{ font-size: 20px; line-height: 20px; font-weight: 100; }
+h5{ font-size: 18px; line-height: 18px; font-weight: 100; }
+h6{ font-size: 16px; line-height: 16px; font-weight: 100; }
+
+
+/* Text */
+p{ font-size: 17px; color: rgba(0,0,0,.9); }
